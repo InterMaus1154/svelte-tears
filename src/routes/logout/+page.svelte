@@ -4,8 +4,7 @@
     import {goto} from "$app/navigation";
 
     onMount(function () {
-        // on logout, invalidate token and redirect to login
+        // on logout, invalidate token
         token.set(null);
-        goto('/login');
     });
 </script>
